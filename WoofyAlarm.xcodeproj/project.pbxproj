@@ -12,7 +12,8 @@
 		7888D61B2BD3410F00CFEC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7888D61A2BD3410F00CFEC74 /* Assets.xcassets */; };
 		7888D61E2BD3410F00CFEC74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7888D61D2BD3410F00CFEC74 /* Preview Assets.xcassets */; };
 		7888D6302BD40D3900CFEC74 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7888D62F2BD40D3900CFEC74 /* Localizable.xcstrings */; };
-		7888D6322BD41F5300CFEC74 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6312BD41F5300CFEC74 /* Colors.swift */; };
+		7888D6362BD4405C00CFEC74 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6352BD4405C00CFEC74 /* AlarmsView.swift */; };
+		7888D6382BD450A700CFEC74 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6372BD450A700CFEC74 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,8 @@
 		7888D61A2BD3410F00CFEC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7888D61D2BD3410F00CFEC74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7888D62F2BD40D3900CFEC74 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = SOURCE_ROOT; };
-		7888D6312BD41F5300CFEC74 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7888D6352BD4405C00CFEC74 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlarmsView.swift; path = WoofyAlarm/Views/AlarmsView.swift; sourceTree = SOURCE_ROOT; };
+		7888D6372BD450A700CFEC74 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 		7888D6282BD40BF800CFEC74 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				7888D6312BD41F5300CFEC74 /* Colors.swift */,
+				7888D6372BD450A700CFEC74 /* Assets.swift */,
 				7888D62F2BD40D3900CFEC74 /* Localizable.xcstrings */,
 			);
 			path = Constants;
@@ -142,6 +144,7 @@
 		7888D62C2BD40C1300CFEC74 /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				7888D6352BD4405C00CFEC74 /* AlarmsView.swift */,
 				7888D6182BD3410D00CFEC74 /* MainAlarmView.swift */,
 			);
 			path = MainViews;
@@ -234,7 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7888D6192BD3410D00CFEC74 /* MainAlarmView.swift in Sources */,
-				7888D6322BD41F5300CFEC74 /* Colors.swift in Sources */,
+				7888D6362BD4405C00CFEC74 /* AlarmsView.swift in Sources */,
+				7888D6382BD450A700CFEC74 /* Assets.swift in Sources */,
 				7888D6172BD3410D00CFEC74 /* WoofyAlarmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

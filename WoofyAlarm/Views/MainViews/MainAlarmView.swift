@@ -5,7 +5,7 @@ struct MainAlarmView: View {
     var body: some View {
         TabView {
             Group {
-                Text("Placeholder Sleep View")
+                AlarmsView()
                     .tabItem {
                         Label("Alarms", systemImage: "moon")
                     }

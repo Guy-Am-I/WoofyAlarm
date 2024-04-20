@@ -6,4 +6,4 @@ xcassets:
   outputs:
     templatePath: xcassets-swiftui.stencil
     #templateName: templatePath
-    output: Colors.swift
+    output: Assets.swift
