@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
+    "08:30" : {
+
+    },
     "About" : {
 
     },
@@ -24,13 +30,13 @@
     "Placeholder Settings View" : {
 
     },
-    "Placeholder Sleep View" : {
-
-    },
     "Placeholder Sounds View" : {
 
     },
     "Settings" : {
+
+    },
+    "Sleep Time" : {
 
     },
     "Sounds" : {

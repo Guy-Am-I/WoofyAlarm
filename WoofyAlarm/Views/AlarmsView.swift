@@ -9,7 +9,19 @@ import SwiftUI
 
 struct AlarmsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { proxy in
+            VStack {
+                Asset.labradorCouch.image
+                    .resizable()
+                    .frame(width: proxy.size.width, height: proxy.size.height * 0.4)
+                    .scaledToFit()
+                    .offset(y: -15)
+                    .shadow(color: .black, radius: 4, x: 0, y: 10)
+                BedtimeView()
+                AlarmsListView()
+            }
+            .padding([.leading, .trailing], 10)
+        }
     }
 }
 
