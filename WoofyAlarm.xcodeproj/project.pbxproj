@@ -51,8 +51,15 @@
 		7888D6152BD3410D00CFEC74 /* WoofyAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				7888D62B2BD40C0E00CFEC74 /* Model */,
+				7888D62A2BD40C0900CFEC74 /* ViewModel */,
+				7888D6292BD40BFD00CFEC74 /* Views */,
+				7888D6282BD40BF800CFEC74 /* Constants */,
+				7888D6272BD40BF300CFEC74 /* Fonts */,
+				7888D6262BD40BEB00CFEC74 /* TimeAndDate */,
+				7888D6252BD40BE300CFEC74 /* LocalNotifications */,
+				7888D6242BD40BDC00CFEC74 /* Sounds */,
 				7888D6162BD3410D00CFEC74 /* WoofyAlarmApp.swift */,
-				7888D6182BD3410D00CFEC74 /* MainAlarmView.swift */,
 				7888D61A2BD3410F00CFEC74 /* Assets.xcassets */,
 				7888D61C2BD3410F00CFEC74 /* Preview Content */,
 			);
@@ -65,6 +72,87 @@
 				7888D61D2BD3410F00CFEC74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7888D6242BD40BDC00CFEC74 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7888D6252BD40BE300CFEC74 /* LocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalNotifications;
+			sourceTree = "<group>";
+		};
+		7888D6262BD40BEB00CFEC74 /* TimeAndDate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TimeAndDate;
+			sourceTree = "<group>";
+		};
+		7888D6272BD40BF300CFEC74 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7888D6282BD40BF800CFEC74 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7888D6292BD40BFD00CFEC74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7888D62E2BD40C2000CFEC74 /* SubViews */,
+				7888D62D2BD40C1A00CFEC74 /* SupportingViews */,
+				7888D62C2BD40C1300CFEC74 /* MainViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7888D62A2BD40C0900CFEC74 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7888D62B2BD40C0E00CFEC74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7888D62C2BD40C1300CFEC74 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				7888D6182BD3410D00CFEC74 /* MainAlarmView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		7888D62D2BD40C1A00CFEC74 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		7888D62E2BD40C2000CFEC74 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

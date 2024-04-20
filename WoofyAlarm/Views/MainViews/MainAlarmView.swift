@@ -7,7 +7,7 @@ struct MainAlarmView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hdsello, world!")
+            Text("Hola Amigos, world!")
         }
         .padding()
     }
