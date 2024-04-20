@@ -1,0 +1,9 @@
+input_dir: WoofyAlarm/
+output_dir: WoofyAlarm/Constants/
+
+xcassets:
+  inputs: Assets.xcassets
+  outputs:
+    templatePath: xcassets-swiftui.stencil
+    #templateName: templatePath
+    output: Colors.swift

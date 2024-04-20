@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "About" : {
+
+    },
+    "Alarms" : {
+
+    },
     "Hello World" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -11,6 +17,24 @@
           }
         }
       }
+    },
+    "Placeholder About View" : {
+
+    },
+    "Placeholder Settings View" : {
+
+    },
+    "Placeholder Sleep View" : {
+
+    },
+    "Placeholder Sounds View" : {
+
+    },
+    "Settings" : {
+
+    },
+    "Sounds" : {
+
     }
   },
   "version" : "1.0"
