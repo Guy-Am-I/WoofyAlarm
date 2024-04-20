@@ -18,6 +18,7 @@ struct AlarmsListView: View {
                         .padding(.bottom, 5)
                 }
             }
+            .scrollIndicators(.hidden)
         }
     }
 }

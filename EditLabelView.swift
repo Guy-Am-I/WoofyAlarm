@@ -14,6 +14,7 @@ struct EditLabelView: View {
             .stroke(Asset.buttonPrimary.color, lineWidth: 3)
             .overlay {
                 Image(systemName: "square.and.pencil")
+                    .foregroundStyle(Asset.textPrimary.color)
                     .font(.system(size: 30))
                     .offset(y: -4)
                     

@@ -27,6 +27,8 @@ struct MainAlarmView: View {
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(Asset.backgroundTabs.color, for: .tabBar)
         }
+        .tint(Asset.textHighlight.color)
+        
     }
 }
 

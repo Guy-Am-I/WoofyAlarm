@@ -25,7 +25,7 @@ struct AlarmItemView: View {
             .tint(Asset.backgroundTabs.color)
             .padding()
             .background(.ultraThinMaterial)
-            .background(Asset.backgroundSecondary.color.opacity(0.8))
+            .background(Asset.backgroundSecondary.color.opacity(0.5))
             .clipShape(RoundedRectangle(cornerRadius: 25))
         }
     }

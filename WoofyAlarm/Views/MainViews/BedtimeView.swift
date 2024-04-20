@@ -19,7 +19,6 @@ struct BedtimeView: View {
                     EditLabelView()
                 })
             }
-            .padding(.trailing)
         }
         .padding(.vertical)
     }

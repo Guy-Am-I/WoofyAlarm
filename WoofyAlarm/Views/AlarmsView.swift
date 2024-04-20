@@ -21,6 +21,7 @@ struct AlarmsView: View {
                 AlarmsListView()
             }
         }
+        .padding(.horizontal)
     }
 }
 
