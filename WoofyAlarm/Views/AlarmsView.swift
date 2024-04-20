@@ -20,7 +20,6 @@ struct AlarmsView: View {
                 BedtimeView()
                 AlarmsListView()
             }
-            .padding([.leading, .trailing], 10)
         }
     }
 }

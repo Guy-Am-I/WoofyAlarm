@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct AlarmsListView: View {
+    @State var isAlarmOn: Bool = false
     var body: some View {
         VStack(alignment: .leading) {
             Text("Alarms")
             ScrollView {
                 ForEach(0..<10) { i in
-                    RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.clear)
-                        .overlay {
-                            Text("\(i)")
-                                .font(.largeTitle)
-                                .fontWeight(.semibold)
-                        }
-                        .padding(.vertical)
+                    AlarmItemView(isActive: $isAlarmOn)
+                        .padding(.bottom, 5)
                 }
             }
         }

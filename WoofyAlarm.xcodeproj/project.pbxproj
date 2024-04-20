@@ -17,6 +17,8 @@
 		7888D63A2BD4553600CFEC74 /* BedtimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6392BD4553600CFEC74 /* BedtimeView.swift */; };
 		7888D63C2BD455C300CFEC74 /* AlarmsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D63B2BD455C300CFEC74 /* AlarmsListView.swift */; };
 		7888D63E2BD468D700CFEC74 /* EditLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D63D2BD468D700CFEC74 /* EditLabelView.swift */; };
+		7888D6402BD46C0E00CFEC74 /* AlarmItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */; };
+		7888D6422BD4817A00CFEC74 /* TimeDisplayViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		7888D6392BD4553600CFEC74 /* BedtimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeView.swift; path = WoofyAlarm/Views/MainViews/BedtimeView.swift; sourceTree = SOURCE_ROOT; };
 		7888D63B2BD455C300CFEC74 /* AlarmsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlarmsListView.swift; path = WoofyAlarm/Views/MainViews/AlarmsListView.swift; sourceTree = SOURCE_ROOT; };
 		7888D63D2BD468D700CFEC74 /* EditLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabelView.swift; sourceTree = SOURCE_ROOT; };
+		7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemView.swift; sourceTree = SOURCE_ROOT; };
+		7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeDisplayViews.swift; path = WoofyAlarm/Views/SubViews/TimeDisplayViews.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 		7888D62D2BD40C1A00CFEC74 /* SupportingViews */ = {
 			isa = PBXGroup;
 			children = (
+				7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */,
+				7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */,
 				7888D63D2BD468D700CFEC74 /* EditLabelView.swift */,
 			);
 			path = SupportingViews;
@@ -250,6 +256,8 @@
 				7888D6192BD3410D00CFEC74 /* MainAlarmView.swift in Sources */,
 				7888D6362BD4405C00CFEC74 /* AlarmsView.swift in Sources */,
 				7888D6382BD450A700CFEC74 /* Assets.swift in Sources */,
+				7888D6402BD46C0E00CFEC74 /* AlarmItemView.swift in Sources */,
+				7888D6422BD4817A00CFEC74 /* TimeDisplayViews.swift in Sources */,
 				7888D63C2BD455C300CFEC74 /* AlarmsListView.swift in Sources */,
 				7888D6172BD3410D00CFEC74 /* WoofyAlarmApp.swift in Sources */,
 			);
