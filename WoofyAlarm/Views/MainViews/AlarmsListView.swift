@@ -14,8 +14,7 @@ struct AlarmsListView: View {
         VStack(alignment: .leading) {
             Text("Alarms")
             ScrollView {
-                //ForEach alarm in Database
-                //sort by closest to current time
+                //sort by closest to current day & time
                 // TODO: Ideas
                 //pull down to refresh?
                 //slide to delete?

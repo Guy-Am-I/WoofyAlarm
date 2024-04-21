@@ -10,8 +10,10 @@ import SwiftUI
 struct AlarmItemView: View {
     @Bindable var alarm: AlarmModel
     
-    var formattedTime: String {
-        alarm.alarmTime.formatted(date: .omitted, time: .shortened)
+    var formatted24HourTime: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        return dateFormatter.string(from: alarm.alarmTime)
     }
     var formattedDays: String {
         alarm.daysActive.joined(separator: ",")
@@ -21,7 +23,7 @@ struct AlarmItemView: View {
         HStack {
             Toggle(isOn: $alarm.isActive) {
                 VStack(alignment: .leading) {
-                    Text(formattedTime)
+                    Text(formatted24HourTime)
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     HStack {
