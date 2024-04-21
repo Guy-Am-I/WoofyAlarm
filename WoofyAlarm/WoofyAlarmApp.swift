@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct WoofyAlarmApp: App {
@@ -13,5 +14,6 @@ struct WoofyAlarmApp: App {
         WindowGroup {
             MainAlarmView()
         }
+        .modelContainer(for: SingleAlarmModel.self)
     }
 }
