@@ -37,14 +37,13 @@ struct AlarmItemView: View {
                         .minimumScaleFactor(0.5)
                     }
                 }
-                
             }
             .padding()
             .tint(Asset.backgroundTabs.color)
-            .background(.ultraThinMaterial)
-            .background(Asset.backgroundSecondary.color.opacity(0.5))
-            .clipShape(RoundedRectangle(cornerRadius: 25))
         }
+        .background(.ultraThinMaterial)
+        .background(Asset.backgroundSecondary.color.opacity(0.5))
+        .clipShape(RoundedRectangle(cornerRadius: 25))
     }
 }
 
