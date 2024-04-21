@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BedtimeView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 0) {
             Text("Sleep Time")
                 .font(.headline)
             HStack {
@@ -19,8 +19,7 @@ struct BedtimeView: View {
                     EditLabelView()
                 })
             }
-        }
-        .padding(.vertical)
+        }.padding(.bottom)
     }
 }
 

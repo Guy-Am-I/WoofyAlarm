@@ -14,7 +14,14 @@ struct AlarmsListView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Alarms")
+            HStack {
+                Text("Alarms")
+                Spacer()
+                Button {} label: {
+                    Image(systemName: "plus")
+                }
+            }.padding(.horizontal)
+            .font(.title3)
             List {
                 //sort by closest to current day & time
                 // TODO: Ideas
@@ -22,7 +29,7 @@ struct AlarmsListView: View {
                 //edit on tap?
                 ForEach(alarms) { alarm in
                     AlarmItemView(alarm: alarm)
-                        .swipeActions(allowsFullSwipe: false) {
+                        .swipeActions(allowsFullSwipe: true) {
                             Button(role: .destructive, action: {deleteAlarmFromStorage(for: alarm)}, label: {
                                 Label("Delete", systemImage: "trash.fill")
                             })
