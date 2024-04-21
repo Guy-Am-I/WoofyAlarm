@@ -22,8 +22,13 @@ struct AlarmsListView: View {
                 //edit on tap?
                 ForEach(alarms) { alarm in
                     AlarmItemView(alarm: alarm)
+                        .swipeActions(allowsFullSwipe: false) {
+                            Button(role: .destructive, action: {deleteAlarmFromStorage(for: alarm)}, label: {
+                                Label("Delete", systemImage: "trash.fill")
+                            })
+                            .tint(.red)
+                        }
                 }
-                .onDelete(perform: deleteAlarmFromStorage)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
                 .listRowBackground(Asset.backgroundPrimary.color)
             }
@@ -32,15 +37,14 @@ struct AlarmsListView: View {
         }
     }
     
-    private func deleteAlarmFromStorage(at offsets: IndexSet) {
-        offsets.forEach { index in
-            do {
-                modelContext.delete(alarms[index])
-                try modelContext.save()
-            } catch {
-                print("Unable to delete Alarm: \(alarms[index].id)")
-            }
+    private func deleteAlarmFromStorage(for model: AlarmModel) {
+        do {
+            modelContext.delete(model)
+            try modelContext.save()
+        } catch {
+            print("Unable to delete Alarm: \(model.id)")
         }
+        
     }
     
 }
