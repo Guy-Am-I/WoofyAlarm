@@ -1,5 +1,6 @@
 
 import SwiftUI
+import SwiftData
 
 struct MainAlarmView: View {
     var body: some View {
@@ -32,6 +33,22 @@ struct MainAlarmView: View {
     }
 }
 
-#Preview {
-    MainAlarmView()
-}
+    @MainActor
+    let previewContainer: ModelContainer = {
+        do {
+            let config = ModelConfiguration(isStoredInMemoryOnly: true)
+            let container = try ModelContainer(for: AlarmModel.self, configurations: config)
+            
+            AlarmModel.GenDummyAlarms().forEach { alarm in
+                container.mainContext.insert(alarm)
+            }
+            
+            return container
+        } catch {
+            fatalError("Failed to create preview container")
+        }
+    }()
+
+    #Preview {
+        MainAlarmView().modelContainer(previewContainer)
+    }

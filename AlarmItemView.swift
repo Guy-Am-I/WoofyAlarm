@@ -8,18 +8,26 @@
 import SwiftUI
 
 struct AlarmItemView: View {
-    let hour: Int = 0
-    let min: Int = 0
-    let daysActive: String = ""
-    @Binding var isActive: Bool
+    @Bindable var alarm: AlarmModel
+    
+    var formattedTime: String {
+        alarm.alarmTime.formatted(date: .omitted, time: .shortened)
+    }
+    var formattedDays: String {
+        alarm.daysActive.joined(separator: ",")
+    }
+    
     var body: some View {
         HStack {
-            Toggle(isOn: $isActive) {
+            Toggle(isOn: $alarm.isActive) {
                 VStack(alignment: .leading) {
-                    Text("08:00")
+                    Text(formattedTime)
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    Text("Mon-Fri")
+                    HStack {
+                        Text(alarm.title)
+                        Text(formattedDays)
+                    }
                 }
             }
             .tint(Asset.backgroundTabs.color)
@@ -32,5 +40,5 @@ struct AlarmItemView: View {
 }
 
 #Preview {
-    AlarmItemView(isActive: .constant(true))
+    AlarmItemView(alarm: AlarmModel.DefaultAlarm())
 }

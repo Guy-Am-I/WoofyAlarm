@@ -31,7 +31,4 @@ struct BedtimeDurationView: View {
         }
     }
 }
-//
-//func formattedTime: String {
-//    alarmTime.formatted(date: .omitted, time: .shortened)
-//}
+

@@ -6,21 +6,29 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AlarmsListView: View {
-    @State var isAlarmOn: Bool = false
+    @Query(sort: [SortDescriptor(\AlarmModel.id)]) var alarms: [AlarmModel]
     var body: some View {
         VStack(alignment: .leading) {
             Text("Alarms")
             ScrollView {
-                ForEach(0..<10) { i in
-                    AlarmItemView(isActive: $isAlarmOn)
+                //ForEach alarm in Database
+                //sort by closest to current time
+                // TODO: Ideas
+                //pull down to refresh?
+                //slide to delete?
+                //edit on tap?
+                ForEach(alarms) { alarm in
+                    AlarmItemView(alarm: alarm)
                         .padding(.bottom, 5)
                 }
             }
             .scrollIndicators(.hidden)
         }
     }
+    
 }
 
 #Preview {

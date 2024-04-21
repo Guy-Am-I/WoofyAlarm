@@ -9,9 +9,10 @@ import Foundation
 import SwiftData
 
 @Model
-final class AlarmModel {
+final class AlarmModel: Identifiable {
     //MARK: how to best add alarms for future?
     // i.e. how far in advance to create the alarm
+    let id = UUID() //currently used for sorting, delete later?
     var alarmTime: Date
     var title: String
     var isActive: Bool
