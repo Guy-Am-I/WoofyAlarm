@@ -14,6 +14,6 @@ struct WoofyAlarmApp: App {
         WindowGroup {
             MainAlarmView()
         }
-        .modelContainer(for: SingleAlarmModel.self)
+        .modelContainer(for: AlarmModel.self)
     }
 }

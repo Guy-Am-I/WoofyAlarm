@@ -20,4 +20,9 @@ extension Date {
         lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
     }
     
+    static func currentDayString() -> String {
+        let index = Calendar.current.component(.weekday, from: Date())
+        return Calendar.current.weekdaySymbols[index - 1]
+    }
+    
 }

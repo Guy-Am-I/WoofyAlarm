@@ -19,7 +19,7 @@
 		7888D63E2BD468D700CFEC74 /* EditLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D63D2BD468D700CFEC74 /* EditLabelView.swift */; };
 		7888D6402BD46C0E00CFEC74 /* AlarmItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */; };
 		7888D6422BD4817A00CFEC74 /* TimeDisplayViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */; };
-		7888D6462BD4880200CFEC74 /* SingleAlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6452BD4880200CFEC74 /* SingleAlarmModel.swift */; };
+		7888D6462BD4880200CFEC74 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6452BD4880200CFEC74 /* AlarmModel.swift */; };
 		7888D6482BD48BFF00CFEC74 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6472BD48BFF00CFEC74 /* ExtensionDate.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		7888D63D2BD468D700CFEC74 /* EditLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabelView.swift; sourceTree = SOURCE_ROOT; };
 		7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItemView.swift; sourceTree = SOURCE_ROOT; };
 		7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeDisplayViews.swift; path = WoofyAlarm/Views/SubViews/TimeDisplayViews.swift; sourceTree = SOURCE_ROOT; };
-		7888D6452BD4880200CFEC74 /* SingleAlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingleAlarmModel.swift; path = WoofyAlarm/Views/SupportingViews/SingleAlarmModel.swift; sourceTree = SOURCE_ROOT; };
+		7888D6452BD4880200CFEC74 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlarmModel.swift; path = WoofyAlarm/Views/SupportingViews/AlarmModel.swift; sourceTree = SOURCE_ROOT; };
 		7888D6472BD48BFF00CFEC74 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +151,7 @@
 		7888D62B2BD40C0E00CFEC74 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7888D6452BD4880200CFEC74 /* SingleAlarmModel.swift */,
+				7888D6452BD4880200CFEC74 /* AlarmModel.swift */,
 				7888D6472BD48BFF00CFEC74 /* ExtensionDate.swift */,
 			);
 			path = Model;
@@ -263,7 +263,7 @@
 				7888D6192BD3410D00CFEC74 /* MainAlarmView.swift in Sources */,
 				7888D6362BD4405C00CFEC74 /* AlarmsView.swift in Sources */,
 				7888D6382BD450A700CFEC74 /* Assets.swift in Sources */,
-				7888D6462BD4880200CFEC74 /* SingleAlarmModel.swift in Sources */,
+				7888D6462BD4880200CFEC74 /* AlarmModel.swift in Sources */,
 				7888D6402BD46C0E00CFEC74 /* AlarmItemView.swift in Sources */,
 				7888D6422BD4817A00CFEC74 /* TimeDisplayViews.swift in Sources */,
 				7888D63C2BD455C300CFEC74 /* AlarmsListView.swift in Sources */,
