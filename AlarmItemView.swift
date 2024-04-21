@@ -22,18 +22,25 @@ struct AlarmItemView: View {
     var body: some View {
         HStack {
             Toggle(isOn: $alarm.isActive) {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: -2) {
                     Text(formatted24HourTime)
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    HStack {
-                        Text(alarm.title)
-                        Text(formattedDays)
+                    ScrollView(.horizontal) {
+                        HStack {
+                            Text("\(alarm.title): ")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                            Text(formattedDays)
+                                .font(.subheadline)
+                        }
+                        .minimumScaleFactor(0.5)
                     }
                 }
+                
             }
-            .tint(Asset.backgroundTabs.color)
             .padding()
+            .tint(Asset.backgroundTabs.color)
             .background(.ultraThinMaterial)
             .background(Asset.backgroundSecondary.color.opacity(0.5))
             .clipShape(RoundedRectangle(cornerRadius: 25))

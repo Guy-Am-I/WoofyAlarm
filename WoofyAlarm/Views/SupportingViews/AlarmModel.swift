@@ -40,7 +40,7 @@ final class AlarmModel: Identifiable {
         return [
             AlarmModel(alarmTime: Date(), title: "Alarm 1", isActive: true, isSnooze: true, sound: "TODO", daysActive: ["Sun"]),
             AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*3), title: "Alarm 2", isActive: false, isSnooze: true, sound: "TODO2", daysActive: ["Sun", "Mon"]),
-            AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*5), title: "Alarm 3", isActive: true, isSnooze: true, sound: "TODO3", daysActive: ["Tues"]),
+            AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*5), title: "Alarm 3 - Walk the dog", isActive: true, isSnooze: true, sound: "TODO3", daysActive: ["Tues"]),
             AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*6), title: "Alarm 4", isActive: false, isSnooze: true, sound: "TODO4", daysActive: ["Sun", "Mon", "Wed", "Fri"]),
             AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*8), title: "Alarm Everyday", isActive: true, isSnooze: true, sound: "TODO5", daysActive: ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"]),
             AlarmModel(alarmTime: Date().addingTimeInterval(oneHour*10), title: "Alarm Weekend", isActive: false, isSnooze: true, sound: "TODO6", daysActive: ["Sat", "Sun"]),
