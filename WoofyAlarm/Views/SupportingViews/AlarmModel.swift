@@ -31,7 +31,7 @@ final class AlarmModel {
     }
     
     static func DefaultAlarm () -> AlarmModel {
-        AlarmModel(alarmTime: Date.distantFuture, title: "Testing Alarm", isActive: true, isSnooze: true, sound: "TODO", daysActive: ["Sunday", "Monday"])
+        AlarmModel(alarmTime: Date.distantFuture, title: "Testing Alarm", isActive: true, isSnooze: true, sound: "TODO", daysActive: ["Sun", "Mon"])
     }
     
 }

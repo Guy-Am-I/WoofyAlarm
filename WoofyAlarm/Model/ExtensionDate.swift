@@ -22,7 +22,7 @@ extension Date {
     
     static func currentDayString() -> String {
         let index = Calendar.current.component(.weekday, from: Date())
-        return Calendar.current.weekdaySymbols[index - 1]
+        return Calendar.current.shortWeekdaySymbols[index - 1]
     }
     
 }
