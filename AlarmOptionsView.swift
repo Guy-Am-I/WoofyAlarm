@@ -53,7 +53,6 @@ struct AlarmOptionsViewGroup: View {
 
 
 struct AlarmOptionsView: View {
-    //    @Bindable var alarm: AlarmModel
     var body: some View {
         List {
             AlarmOptionsViewGroup()
