@@ -8,6 +8,11 @@
 import Foundation
 
 extension Date {
+    static var is12HourFormat: Bool {
+        Locale.current.hourCycle == .oneToTwelve ||
+        Locale.current.hourCycle == .zeroToEleven
+    }
+    
     var timeOfDayPercent: CGFloat? {
         let calendar = Calendar.current
         let hour = calendar.component(.hour, from: self)
@@ -19,6 +24,7 @@ extension Date {
     static func -(_ lhs: Date, _ rhs: Date) -> TimeInterval {
         lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
     }
+    
     
     static func currentDayString() -> String {
         let index = Calendar.current.component(.weekday, from: Date())
