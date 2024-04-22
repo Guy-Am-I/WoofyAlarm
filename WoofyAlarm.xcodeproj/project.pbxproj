@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		782FAEF82BD58D48009BE8BA /* AddEditAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FAEF72BD58D48009BE8BA /* AddEditAlarmView.swift */; };
 		782FAEFA2BD59FE2009BE8BA /* AlarmWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FAEF92BD59FE2009BE8BA /* AlarmWheelView.swift */; };
+		782FAEFE2BD5F250009BE8BA /* AlarmOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FAEFD2BD5F250009BE8BA /* AlarmOptionsView.swift */; };
 		7888D6172BD3410D00CFEC74 /* WoofyAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6162BD3410D00CFEC74 /* WoofyAlarmApp.swift */; };
 		7888D6192BD3410D00CFEC74 /* MainAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7888D6182BD3410D00CFEC74 /* MainAlarmView.swift */; };
 		7888D61B2BD3410F00CFEC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7888D61A2BD3410F00CFEC74 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		782FAEF72BD58D48009BE8BA /* AddEditAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditAlarmView.swift; sourceTree = SOURCE_ROOT; };
 		782FAEF92BD59FE2009BE8BA /* AlarmWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmWheelView.swift; sourceTree = SOURCE_ROOT; };
+		782FAEFD2BD5F250009BE8BA /* AlarmOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmOptionsView.swift; sourceTree = SOURCE_ROOT; };
 		7888D6132BD3410D00CFEC74 /* WoofyAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoofyAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7888D6162BD3410D00CFEC74 /* WoofyAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoofyAlarmApp.swift; sourceTree = "<group>"; };
 		7888D6182BD3410D00CFEC74 /* MainAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlarmView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		7888D62D2BD40C1A00CFEC74 /* SupportingViews */ = {
 			isa = PBXGroup;
 			children = (
+				782FAEFD2BD5F250009BE8BA /* AlarmOptionsView.swift */,
 				782FAEF92BD59FE2009BE8BA /* AlarmWheelView.swift */,
 				7888D6412BD4817A00CFEC74 /* TimeDisplayViews.swift */,
 				7888D63F2BD46C0E00CFEC74 /* AlarmItemView.swift */,
@@ -272,6 +275,7 @@
 				7888D6382BD450A700CFEC74 /* Assets.swift in Sources */,
 				7888D6462BD4880200CFEC74 /* AlarmModel.swift in Sources */,
 				7888D6402BD46C0E00CFEC74 /* AlarmItemView.swift in Sources */,
+				782FAEFE2BD5F250009BE8BA /* AlarmOptionsView.swift in Sources */,
 				7888D6422BD4817A00CFEC74 /* TimeDisplayViews.swift in Sources */,
 				7888D63C2BD455C300CFEC74 /* AlarmsListView.swift in Sources */,
 				782FAEFA2BD59FE2009BE8BA /* AlarmWheelView.swift in Sources */,

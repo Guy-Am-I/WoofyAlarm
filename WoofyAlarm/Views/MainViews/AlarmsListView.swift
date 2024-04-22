@@ -39,7 +39,13 @@ struct AlarmsListView: View {
                         }
                 }
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 10, trailing: 0))
+                .background(Asset.textPrimary.color.opacity(0.1))
                 .listRowBackground(Asset.backgroundPrimary.color)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .onTapGesture {
+                    //TODO: send current alarm to the view
+                    showAddAlarmPopover.toggle()
+                }
             }
             .listStyle(.plain)
             .scrollIndicators(.hidden)
