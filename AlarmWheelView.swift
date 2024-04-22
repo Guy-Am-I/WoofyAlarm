@@ -12,13 +12,18 @@ struct AlarmWheelView: View {
     var body: some View {
         ZStack {
             Asset.backgroundPrimary.color
-            VStack {
-                DatePicker("", selection: $alarmTime, displayedComponents: .hourAndMinute)
-                    .datePickerStyle(.wheel)
-                    .labelsHidden()
-            }
-            .border(.red)
+            Circle()
+                .stroke(lineWidth: 20)
+                .fill(Asset.buttonPrimary.color)
+            //TODO: Use custom picker to apply better styling
+            DatePicker("", selection: $alarmTime, displayedComponents: .hourAndMinute)
+                .datePickerStyle(.wheel)
+                .labelsHidden()
+                .colorMultiply(Asset.textPrimary.color)
+                .scaleEffect(CGSize(width: 1.2, height: 1.2))
         }
+        .padding(.horizontal)
+        .frame(maxWidth: 300, maxHeight: 300)
     }
 }
 
