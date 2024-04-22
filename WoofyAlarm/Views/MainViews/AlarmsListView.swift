@@ -9,18 +9,20 @@ import SwiftUI
 import SwiftData
 
 struct AlarmsListView: View {
-    @Query(sort: [SortDescriptor(\AlarmModel.id)]) var alarms: [AlarmModel]
+    @Query var alarms: [AlarmModel]
     @Environment(\.modelContext) private var modelContext
+    @State var showAddAlarmPopover: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text("Alarms")
                 Spacer()
-                Button {} label: {
+                Button {withAnimation {showAddAlarmPopover.toggle()}} label: {
                     Image(systemName: "plus")
                 }
-            }.padding(.horizontal)
+            }
+            .padding(.horizontal)
             .font(.title3)
             List {
                 //sort by closest to current day & time
@@ -41,6 +43,10 @@ struct AlarmsListView: View {
             }
             .listStyle(.plain)
             .scrollIndicators(.hidden)
+        }
+        .popover(isPresented: $showAddAlarmPopover) {
+            AddEditAlarmView() //TODO: pas
+                .presentationBackground(Asset.backgroundPrimary.color)
         }
     }
     
